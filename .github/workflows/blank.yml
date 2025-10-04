@@ -25,8 +25,6 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          
-
           modprobe -r ahci
 
           shutdown -h +120 > /dev/null 2>&1
